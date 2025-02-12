@@ -1,0 +1,36 @@
+/* styles/style.css */
+body {
+    background-color: #9E7777;
+    font-family: Arial, sans-serif;
+    margin: 0;  /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+h1 {
+    color: #333;
+}
+
+header{
+    background-color: #504747; /* Color de fondo */
+    color: white; 
+    padding: 20px; 
+}
+.BarraNav{
+    display: flex;        /* Activa el modelo de Flexbox */
+    justify-content: space-between; /* Espacio entre los divs */
+    gap: 5px;            /* Espacio entre los divs */
+    align-items: center;
+}
+
+.Titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-right: 1370px;
+}
+.BotonesNav{
+    display: flex;        /* Activa el modelo de Flexbox */
+    justify-content: flex-end; /* Espacio entre los divs */
+    gap: 5px;            /* Espacio entre los divs */
+    align-items: center;
+}
