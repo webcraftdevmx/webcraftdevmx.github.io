@@ -97,12 +97,12 @@
 * CSS para dispositvos mobiles
 */
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .BotonesNav {
     display: none;
   }
   .banner h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   p {
