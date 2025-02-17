@@ -1,94 +1,105 @@
 /* styles/style.css */
 body {
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-    margin: 0;  /* Elimina el margen predeterminado */
-    padding: 0; /* Elimina el relleno predeterminado */
+  background-color: #ffffff;
+  font-family: "DM Sans", serif;
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el relleno predeterminado */
+  box-sizing: border-box;
 }
+
+body,
+html {
+  height: 100vh;
+}
+
 h1 {
-    color: #333;
+  color: #333;
 }
 
-header{
-    background-color: #2F1893; /* Color de fondo */
-    color: white;
-    grid-column: 1/4;
-    height: 100px; 
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly ;
+h2 {
+  color: #1e0e62;
 }
 
-.Logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header {
+  background-color: #2f1893; /* Color de fondo */
+  color: white;
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.Titulo{
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    line-height: 60px;
-    padding-left: 15px;
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.BotonesNav{
-    display: flex;       
-    gap: 2px;            
-    padding-right: 60px;
+
+.Titulo {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  line-height: 60px;
+  padding-left: 15px;
 }
-.Home{
-    color: white;
-    background-color: transparent;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    border:none;
+.BotonesNav {
+  display: flex;
+  gap: 2px;
+  padding-right: 60px;
 }
-.Cata{
-    color: white;
-    background-color: transparent;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    border:none;
+.Home {
+  color: white;
+  background-color: transparent;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  border: none;
 }
-.Contact{
-    color: white;
-    background-color: transparent;
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0px;
-    border-radius: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
-    transform: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    box-shadow: none;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-color: white;
+.Cata {
+  color: white;
+  background-color: transparent;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  border: none;
+}
+.Contact {
+  color: white;
+  background-color: transparent;
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  box-shadow: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-color: white;
 }
 main {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px calc(100vh - 100px) auto;
 }
-.LogoFinal{
-    display: flex;
-    margin-right: auto;
-    padding-left: 60px;
+.LogoFinal {
+  display: flex;
+  margin-right: auto;
+  padding-left: 60px;
 }
