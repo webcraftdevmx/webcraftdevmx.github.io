@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herreria Toledo</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/contacto.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="LogoFinal">
+          <div class="Logo">
+            <img src="assets/Logo.jpg" alt="Logo de Herreria" />
+          </div>
+          <div class="Titulo">Herreria Toledo</div>
+        </div>
+        <div class="BotonesNav">
+          <button class="Home">Inicio</button>
+          <select class="Cata">
+            <option value="1" selected>Catalogo</option>
+            <option value="2">Servicios</option>
+            <option value="3">Mis Trabajos</option>
+          </select>
+          <button class="Contact">Contacto</button>
+        </div>
+      </header>
+
+      <!-- Desarrollo de la pagina de Contacto -->
+      <section class="contContacto">
+        <div class="contTituloContacto">
+          <h1 class="tituloContacto">¡Contáctenos!</h1>
+          <p>AL COMPLETAR EL FORMULARIO NOS <br />COMUNICAREMOS CONTIGO</p>
+        </div>
+        <div class="contInfoEnvio">
+          <div class="contFormulario">
+            <form id="contactForm" method="post">
+              <div class="contEmail">
+                <label class="lblForm" for="email">E-MAIL</label>
+                <input
+                  type="text"
+                  placeholder="Escribe tu e-mail"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="contMensaje">
+                <label class="lblForm" for="Mensaje">MENSAJE</label>
+                <textarea
+                  class="inputMensaje"
+                  name="Mensaje"
+                  id="Mensaje"
+                  placeholder="Escribe tu mensaje"
+                  class="inputMensaje"
+                  rows="6"
+                  cols="50"
+                ></textarea>
+              </div>
+              <div class="contNombre">
+                <label class="lblForm" for="Nombre">NOMBRE</label>
+                <div class="contElementForm">
+                  <input
+                    class="inputNombre"
+                    type="text"
+                    placeholder="Escribe tu nombre"
+                    name="Nombre"
+                    id="Nombre"
+                    required
+                  />
+                  <button class="btnEnviar" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contMasContacto">
+            <div class="contImg">
+              <img src="assets/contactImage.png" alt="IMAGEN" />
+            </div>
+            <div class="contInfo">
+              <div>
+                <span class="fa-brands fa-square-whatsapp"></span
+                ><a href="https://wa.me/526643116368" target="_blank"
+                  >+52 6643116368</a
+                >
+              </div>
+              <div>
+                <span class="fa-solid fa-phone-volume"></span
+                ><a href="tel:+1234567890"> Marca ahora! </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/9fa0bf7bfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Bizid2dbMqeh8NPiU",
+        });
+      })();
+    </script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
