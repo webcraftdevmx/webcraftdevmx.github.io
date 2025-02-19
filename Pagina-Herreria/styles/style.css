@@ -102,24 +102,59 @@ main {
     margin-right: auto;
     padding-left: 60px;
 }
-
-.Menu-Despl{
-    display: none;
-}
-
-.Hambu{
+.Lista, .Menu-Cerrar,.Menu-Despl{
     display: none;
 }
 @media screen and (max-width:980px){
-    .Menu-Despl{
+    .Menu-Despl,.Menu-Cerrar{
         display: block;
+        background-color: transparent;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+
+    .Menu-Despl{
+        padding: 10px;
+    }
+
+    .Hambu{
+        opacity: 0;
+        visibility: hidden;
     }
     .BotonesNav{
         display: none;
     }
-
     .Hambu{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        background-color: #333;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .Lista{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: end;
+    }
+    .Lista li a{
+        display: flex;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+    }
+    .Hambu.visible{
+        opacity: 1;
+        visibility: visible;
     }
     /*https://www.youtube.com/watch?v=Xs3cC8-5QDI*/
 }
