@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/0eb5b3b16c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -22,15 +23,25 @@
           </div>
           <div class="Titulo">Herreria Toledo</div>
         </div>
-        <div class="BotonesNav">
-          <button class="Home">Inicio</button>
-          <select class="Cata">
-            <option value="1" selected>Catalogo</option>
-            <option value="2">Servicios</option>
-            <option value="3">Mis Trabajos</option>
-          </select>
-          <button class="Contact">Contacto</button>
-        </div>
+        <button class="Menu-Despl" id="btnAbrir"><i class="fa-solid fa-bars"></i></i></button>
+        <div id="btnNav" class="BotonesNav">
+            <button class="Home nav" onclick="location.href='/index.html';"">Inicio</button>
+            <select id="Cata" class="Cata nav">
+              <option value="1" selected>Catalogo</option>
+              <option value="2">Servicios</option>
+              <option value="3">Mis Trabajos</option>
+            </select>
+            <button class="Contact nav">Contacto</button>
+        </div> 
+        <nav id="Menu" class="Hambu" >
+          <button class="Menu-Cerrar" id="btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+          <ul class="Lista">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Mis Trabajos</a></li>
+              <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>   
       </header>
 
       <!-- Desarrollo de la pagina de inicio -->
@@ -59,5 +70,6 @@
         </div>
       </section>
     </main>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
