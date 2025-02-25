@@ -9,6 +9,7 @@ body {
 
 body,
 html {
+  min-height: 100%;
   height: auto;
 }
 
@@ -19,11 +20,14 @@ h1 {
 h2 {
   color: #1e0e62;
 }
+
 main {
   position: relative;
-  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px calc(100vh - 100px) auto;
 }
-
 header {
   background-color: #2f1893; /* Color de fondo #2F1893 */
   color: white;
@@ -127,12 +131,6 @@ header {
   padding-right: 25px;
   border: 1px solid #ffffffa4;
 }
-main {
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px calc(100vh - 100px) auto;
-}
 .LogoFinal {
   display: flex;
   margin-right: auto;
@@ -189,7 +187,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: end;
-    position: absolute;
+    position: fixed;
+    height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
