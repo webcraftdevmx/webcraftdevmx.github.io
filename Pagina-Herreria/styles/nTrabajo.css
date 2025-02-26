@@ -1,0 +1,64 @@
+.ContenedorCentral{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.CtrlSuperior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+}
+
+.CtrlT{
+    padding-top: 60px;
+    margin: 0;
+}
+.Ctrlp{
+    margin: 0;
+    padding-bottom: 30px;
+    color: hsla(0, 0%, 0%, 0.541);
+}
+
+.CtrlBotones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    text-align: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.CtrlTrabajos{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.but{
+    flex-direction: row;
+    color: black;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    border-color: black;
+    border-radius: 40px;
+    outline: none;
+    background-color: white;
+    padding-left: 15px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
