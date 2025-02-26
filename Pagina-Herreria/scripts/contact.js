@@ -12,7 +12,7 @@ document
     event.preventDefault();
     if (isValidEmail(email.value)) {
       emailjs
-        .send("service_6i9j3yn", "template_gtbqyea", {
+        .send(API_KEY_MAIL, API_KEY_TEMPLATE, {
           from_name: nombre.value,
           from_email: email.value,
           to_name: "Daniel",
