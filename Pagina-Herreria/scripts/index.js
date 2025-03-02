@@ -10,3 +10,11 @@ btnAbrir.addEventListener("click", () => {
 btnCerrar.addEventListener("click", () => {
   menu.classList.remove("visible");
 });
+
+function cambiarPagina(Element){
+  console.log("Entre")
+  let PaginaSeleccionada = Element.value;
+  if(PaginaSeleccionada){
+      window.location.href = PaginaSeleccionada;
+  }
+}
