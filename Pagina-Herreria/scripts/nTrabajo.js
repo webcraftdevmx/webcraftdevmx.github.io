@@ -1,122 +1,42 @@
 const Objetos = document.querySelectorAll('.obj');
-const Portones = document.getElementById('Portones');
-const Puertas = document.getElementById('Puertas');
-const Protecciones = document.getElementById('Protecciones');
 const Botones = document.querySelectorAll('.but');
 
-Portones.addEventListener('click', () => {
+const Act = 'Active';
+const Ocul = 'Oculta';
+
+function RemueveOculta(){
+    Objetos.forEach((element) => {
+        if (element.classList.contains(Ocul)){
+            element.classList.remove(Ocul);
+        }
+    } )
+}
+
+function EventoClick(objeto){
 
     Botones.forEach((element) => {
-        if (element.classList.contains('Active') && element.id != 'Portones'){
-            element.classList.remove('Active');
+        if (element.classList.contains(Act) && element.id != objeto.id){
+            element.classList.remove(Act);
         }
     } )
-
-    Objetos.forEach((element) => {
-        if (element.classList.contains('Oculta')){
-            element.classList.remove('Oculta');
-        }
-    } )
-
-    if (Portones.classList.contains('Active')){
-        Portones.classList.remove('Active');
     
-        /*Objetos.forEach((element) => {
-            //console.log(element);
-            if (element.classList.contains('Oculta')){
-                element.classList.remove('Oculta');
-                //console.log(element);
-            }
-        } )*/
+    RemueveOculta();
 
+    let Elementos = document.getElementById(objeto.id);
+
+    if (Elementos.classList.contains(Act)){
+        Elementos.classList.remove(Act);
+        RemueveOculta();
     }
     else
     {
-        Portones.classList.add('Active');
+        Elementos.classList.add(Act);
         Objetos.forEach((element) => {
-            //console.log(element);
-            if (!element.classList.contains('portones')){
-                element.classList.add('Oculta');
-                //console.log(element);
+            let valorminusculas = "";
+            valorminusculas = objeto.id;
+            if (!element.classList.contains(valorminusculas.toLowerCase())){
+                element.classList.add(Ocul);
             }
         } )
     }
-})
-
-Puertas.addEventListener('click', () => {
-
-    Botones.forEach((element) => {
-        if (element.classList.contains('Active') && element.id != 'Puertas'){
-            element.classList.remove('Active');
-        }
-    } )
-
-    Objetos.forEach((element) => {
-        if (element.classList.contains('Oculta')){
-            element.classList.remove('Oculta');
-        }
-    } )
-
-    if (Puertas.classList.contains('Active')){
-        Puertas.classList.remove('Active');
-    
-        /*Objetos.forEach((element) => {
-            //console.log(element);
-            if (element.classList.contains('Oculta')){
-                element.classList.remove('Oculta');
-                //console.log(element);
-            }
-        } )*/
-
-    }
-    else
-    {
-        Puertas.classList.add('Active');
-        Objetos.forEach((element) => {
-            //console.log(element);
-            if (!element.classList.contains('puertas')){
-                element.classList.add('Oculta');
-                //console.log(element);
-            }
-        } )
-    }
-})
-
-Protecciones.addEventListener('click', () => {
-    Botones.forEach((element) => {
-        if (element.classList.contains('Active') && element.id != 'Protecciones'){
-            element.classList.remove('Active');
-        }
-    } )
-
-    Objetos.forEach((element) => {
-        if (element.classList.contains('Oculta')){
-            element.classList.remove('Oculta');
-        }
-    } )
-
-    if (Protecciones.classList.contains('Active')){
-        Protecciones.classList.remove('Active');
-    
-        /*Objetos.forEach((element) => {
-            //console.log(element);
-            if (element.classList.contains('Oculta')){
-                element.classList.remove('Oculta');
-                //console.log(element);
-            }
-        } )*/
-
-    }
-    else
-    {
-        Protecciones.classList.add('Active');
-        Objetos.forEach((element) => {
-            //console.log(element);
-            if (!element.classList.contains('protecciones')){
-                element.classList.add('Oculta');
-                //console.log(element);
-            }
-        } )
-    }
-})
-
+}
