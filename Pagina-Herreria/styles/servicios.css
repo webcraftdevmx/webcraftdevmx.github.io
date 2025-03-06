@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .contServicio {
@@ -85,6 +86,7 @@
   left: 0;
   color: #fff;
   transition: opacity 0.5s;
+  z-index: 10;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -ms-transition: opacity 0.5s;
@@ -103,5 +105,9 @@
   .contServicio {
     font-size: 14px;
     width: 90%;
+  }
+
+  .contCajas {
+    gap: 2rem;
   }
 }
