@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herreria Toledo</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/nTrabajo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/0eb5b3b16c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="LogoFinal">
+          <div class="Logo">
+            <img src="assets/Logo.jpg" alt="Logo de Herreria" />
+          </div>
+          <div class="Titulo">Herreria Toledo</div>
+        </div>
+        <button class="Menu-Despl" id="btnAbrir"><i class="fa-solid fa-bars"></i></i></button>
+        <div id="btnNav" class="BotonesNav">
+            <button class="Home nav" onclick="location.href='/index.html';">Inicio</button>
+            <select id="Cata" class="Cata nav" onchange="location.href=this.value;">
+              <option value="/" selected>Catalogo</option>
+              <option value="/servicios.html">Servicios</option>
+              <option value="/nuestrotrabajo.html" >Mis Trabajos</option>
+            </select>
+            <button class="Contact nav" onclick="location.href='/contacto.html';">Contacto</button>
+        </div> 
+        <nav id="Menu" class="Hambu" >
+          <button class="Menu-Cerrar" id="btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+          <ul class="Lista">
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/servicios.html">Servicios</a></li>
+              <li><a href="/nuestrotrabajo.html">Mis Trabajos</a></li>
+              <li><a href="/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>   
+      </header>
+
+      <!-- Desarrollo de pagina de nuestro trabajo -->
+       <div class="ContenedorCentral">
+            <div class="CtrlSuperior">
+                <h1 class="CtrlT">
+                    Nuestro trabajo
+                </h1>
+                <p class="Ctrlp">
+                    Contactanos para cotizaciones.
+                </p>
+                <div class="CtrlBotones">
+                <button class="but" id="Puertas" onclick="EventoClick(this)">Puertas</button>
+                <button class="but" id="Portones" onclick="EventoClick(this)">Portones</button>
+                <button class="but" id="Protecciones" onclick="EventoClick(this)">Protecciones</button>
+                </div>
+            </div>
+            <div class="CtrlTrabajos">
+                <div class="obj portones" >
+                  <img class="Imag" src="assets/porton.jpg" />
+                  <div class="Text">
+                      <span class="Tituloprecio">*Precio</span>
+                      <span class="Precio">$15,000</span>
+                      <p>Porton 1</p>
+                  </div>
+                </div>
+                <div class="obj portones">
+                  <img class="Imag" src="assets/porton.jpg" />
+                  <div class="Text">
+                      <span class="Tituloprecio">*Precio</span>
+                      <span class="Precio">$15,000</span>
+                      <p>Porton 2</p>
+                  </div>
+
+                </div>
+                <div class="obj puertas">
+                  <img class="Imag" src="assets/porton.jpg" />
+                  <div class="Text">
+                      <span class="Tituloprecio">*Precio</span>
+                      <span class="Precio">$15,000</span>
+                      <p>Puertas En el mercado se ofrece una gran variedad de diseños y estilos de puertas herrería todas</p>
+                  </div>
+                    
+                </div>
+                <div class="obj puertas">
+                  <img class="Imag" src="assets/porton.jpg" />
+                <div class="Text">
+                    <span class="Tituloprecio">*Precio</span>
+                    <span class="Precio">$15,000</span>
+                    <p>Puertas En el mercado se ofrece una gran variedad de diseños y estilos de puertas herrería todas</p>
+                </div>
+              </div>
+              <div class="obj protecciones">
+                <img class="Imag" src="assets/porton.jpg" />
+                <div class="Text">
+                    <span class="Tituloprecio">*Precio</span>
+                    <span class="Precio">$15,000</span>
+                    <p>Protecciones En el mercado se ofrece una gran variedad de diseños y estilos de puertas herrería todas</p>
+                </div>
+              </div>
+              <div class="obj protecciones">
+                  <img class="Imag" src="assets/porton.jpg" />
+                  <div class="Text">
+                      <span class="Tituloprecio">*Precio</span>
+                      <span class="Precio">$15,000</span>
+                      <p>Protecciones En el mercado se ofrece una gran variedad de diseños y estilos de puertas herrería todas</p>
+                  </div>
+              </div>
+            </div>
+        </div> 
+    </main>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/nTrabajo.js"></script>
+  </body>
+</html>
