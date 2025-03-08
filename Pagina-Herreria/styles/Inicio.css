@@ -133,11 +133,16 @@
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 1.5rem; /* Hacer el título más pequeño */
+  .banner h1 {
+    font-size: 1.5rem;
   }
 
   p {
-    font-size: 1rem; /* Hacer el párrafo más pequeño */
+    font-size: 0.8rem; /* Hacer el párrafo más pequeño */
+  }
+
+  .AcercaDe {
+    padding-top: 4rem;
+    align-items: flex-start;
   }
 }
