@@ -23,10 +23,9 @@ h2 {
 
 main {
   position: relative;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 100px calc(100vh - 100px) auto;
+  grid-template-rows: 100px auto 150px;
 }
 header {
   background-color: #2f1893; /* Color de fondo #2F1893 */
@@ -35,6 +34,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+footer {
+  background-color: #141414;
+  color: #ffffff9f;
+  padding-top: 15px;
+  grid-column: 1/4;
+  text-align: center;
 }
 
 .Logo img {
@@ -160,6 +167,19 @@ header {
   line-height: 60px;
   padding-left: 15px;
 }
+
+.contFooter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contFooter h3 {
+  margin: 0;
+  font-weight: 300;
+}
 @media screen and (max-width: 980px) {
   .Menu-Despl,
   .Menu-Cerrar {
@@ -196,6 +216,7 @@ header {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
+    z-index: 9999;
   }
   .Lista {
     display: flex;
@@ -219,5 +240,16 @@ header {
   .Logo img {
     width: 50px;
     height: 50px;
+  }
+
+  footer {
+    font-size: 12px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  footer {
+    height: 220px;
   }
 }
