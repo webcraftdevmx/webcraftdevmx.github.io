@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebCraftDevMX</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/aboutUs.css" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/aboutUs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9fa0bf7bfa.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -14,14 +24,17 @@
           <div class="logo">
             <span>WebCraft</span>
           </div>
-          <button class="toggle-button" aria-label="Abrir menú">☰</button>
+          <button class="toggle-button" aria-label="Abrir menú">
+            <i id="iconMenu" class="fa-solid fa-bars"></i>
+          </button>
           <ul class="menuDesk">
-            <li>About us</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
+      <div id="contCurtain" class="curtain hidden"></div>
 
       <section class="AboutUs">
         <div class="presentationUs">
